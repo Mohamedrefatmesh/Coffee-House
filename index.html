@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Coffee House</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="css/all.min.css"/>
+        <script src="javascript/script.js"></script>
+    </head>
+    <body>
+        <!-- start of header-->
+        <div class="header">
+            <div class="container">
+               <img src="images/house.jpg" alt="error" class="logo"/>
+               <div class="menulist">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about_us">About us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">pages</a></li>
+                    <li><a href=""><span id="cartnumber">0</span><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+               </div>
+            </div>
+        </div>
+        <!--end of header-->
+        <!--start of landing -->
+        <div class="landing">
+            <div class="container">
+                <div class="intro">
+                    <h1 class="firsth1">Online store</h1>
+                    <h1 class="secondh1">your market</h1>
+                    <p>From small roastery to coffee pioneer, we are a traditional yet evolving family-run coffee business.
+                    We are proud to serve quality coffee, sourced from the finest Arabica beans and featuring unique taste profiles.
+                    </p>
+                    <button class="button1" onclick="window.location.href='#products';">View products</button>
+                    <button  class="button2" onclick="window.location.href='#about_us';">About us</button>
+                </div>
+                <div class="bag">
+                    <img src="images/bags2.png" alt="error" class="bags"/>
+                </div>
+            </div>
+        </div>
+        <!--end of landing-->
+        <!-- start of about us-->
+        <div class="about_us" id="about_us">
+            <div class="container">
+                <div class="about">
+                    <h2>Who We are</h2>
+                    <h1>About market</h1>
+                    <p>
+                       We specialize in selling all kinds of coffee and hot drinks and we have many branches around the world.The coffee house was established in 1990 and we have more than 300 branc
+                       hes around the world.
+                    </p>
+                </div>
+                <div class="fourabout">
+                    <div class="aboutone">
+                        <i class="fa-solid fa-mug-saucer"></i>
+                        <h1> The best World sorts</h1>
+                        <p>Our coffee experts travel the world sourcing, tasting and grading to select only the finest speciality coffee directly from the grower</p>
+                    </div>
+                    <div class="aboutone">
+                        <i class="fa-solid fa-store"></i>
+                        <h1>Many points of sale</h1>
+                        <p>We have more than 300 branches around the world specializing in selling coffee (Egypt, America, Australia, China, etc.)</p>
+                    </div>
+                    <div class="aboutone">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <h1> Professional baristas</h1>
+                        <p>We have highly trained and professional baristas to produce delicious coffee drinks for our customers</p>
+                    </div>
+                    <div class="aboutone" >
+                        <i class="fa-solid fa-truck"></i>
+                        <h1>24/7 fast delivery</h1>
+                        <p>We have a very fast delivery service. Order from anywhere in the world and receive your order as soon as possible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of the about us section -->
+        <!-- start of products -->
+        <div class="allproducts"  id="products">
+            <div class="container">
+                <div class="producttext">
+                    <h4>Choose your coffee</h4>
+                    <h1>Recent products</h1>
+                    <div class="producstlinks">
+                        <ul>
+                        <li><a href="#coffee">Coffee</a></li>
+                        <li><a href="#drinks">Drinks</a></li>
+                        <li><a href="#machines">Machines</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="productone">
+                        <img src="images/coffee1.jpg"/>
+                        <h1>Ephiopian Aroma</h1>
+                        <h2>25$<h2>
+                        <button class="plus" onclick="minusbutton('quantity1')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity1"/>
+                        <button class="plus" onclick="addbutton('quantity1')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity1',25,'Ephiopian Aroma');">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity1',25,'Ephiopian Aroma');">Buy now</button>
+                    </div>
+                     <div class="productone" id="coffee">
+                        <img src="images/coffee2.jpg"/>
+                        <h1>Eight o'clock beans</h1>
+                        <h2>20$<h2>
+                        <button class="plus" onclick="minusbutton('quantity2')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity2"/>
+                        <button class="plus" onclick="addbutton('quantity2')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity2',20,'Eight oclock beans')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity2',20,'Eight oclock beans')">Buy now</button>
+                    </div>
+                     <div class="productone">
+                        <img src="images/coffee3.jpg"/>
+                        <h1>LAVAZZA beans</h1>
+                        <h2>30$<h2>
+                        <button class="plus" onclick="minusbutton('quantity3')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity3"/>
+                        <button class="plus" onclick="addbutton('quantity3')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity3',30,'LAVAZZA beans')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity3',30,'LAVAZZA beans')">Buy now</button>
+                    </div>
+                     <div class="productone">
+                        <img src="images/coffee4.jpg"/>
+                        <h1>Nespresso Capsules</h1>
+                        <h2>49$<h2>
+                        <button class="plus" onclick="minusbutton('quantity4')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity4"/>
+                        <button class="plus" onclick="addbutton('quantity4')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity4',49,'Nespresso Capsules')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity4',49,'Nespresso Capsules')">Buy now</button>
+                    </div>
+                     <!---drinks section-->
+                     <div class="productone" id="drinks">
+                        <img src="images/ice.jpeg"/>
+                        <h1>Ice Coffee</h1>
+                        <h2>10$<h2>
+                        <button class="plus" onclick="minusbutton('quantity5')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity5"/>
+                        <button class="plus" onclick="addbutton('quantity5')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity5',10,'Ice Coffee')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity5',10,'Ice Coffee')">Buy now</button>
+                    </div>
+                     <div class="productone" id="drinks">
+                        <img src="images/esspresso1.jpg"/>
+                        <h1>Espresso Coffee</h1>
+                        <h2>15$<h2>
+                        <button class="plus" onclick="minusbutton('quantity6')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity6"/>
+                        <button class="plus" onclick="addbutton('quantity6')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity6',15,'Espresso Coffee')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity6',15,'Espresso Coffee')">Buy now</button>
+                    </div>
+                     <div class="productone" id="drinks">
+                        <img src="images/turkish.jpg"/>
+                        <h1>Turkish Coffee</h1>
+                        <h2>12$<h2>
+                        <button class="plus" onclick="minusbutton('quantity7')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity7"/>
+                        <button class="plus" onclick="addbutton('quantity7')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity7',12,'Turkish Coffee');">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity7',12,'Turkish Coffee');">Buy now</button>
+                    </div>
+                     <div class="productone" id="drinks">
+                        <img src="images/latte.jpg"/>
+                        <h1>Latte Coffee</h1>
+                        <h2>14$<h2>
+                        <button class="plus" onclick="minusbutton('quantity8')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity8"/>
+                        <button class="plus" onclick="addbutton('quantity8')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity8',14,'Latte Coffee');">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity8',14,'Latte Coffee');">Buy now</button>
+                    </div>
+                     <!-- start of machines -->
+                     <div class="productone" id="machines">
+                        <img src="images/machine1.jpg"/>
+                        <h1>Delongih Dedica</h1>
+                        <h2>250$<h2>
+                        <button class="plus" onclick="minusbutton('quantity9')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity9"/>
+                        <button class="plus" onclick="addbutton('quantity9')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity9',250,'Delongih Dedica')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity9',250,'Delongih Dedica')">Buy now</button>
+                    </div>
+                     <div class="productone" id="drinks">
+                        <img src="images/machine2.jpg"/>
+                        <h1>Lallauch</h1>
+                        <h2>140$<h2>
+                        <button class="plus" onclick="minusbutton('quantity10')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity10"/>
+                        <button class="plus" onclick="addbutton('quantity10')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity10',140,'Lallauch')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity10',140,'Lallauch')">Buy now</button>
+                    </div>
+                     <div class="productone" id="drinks">
+                        <img src="images/machine3.jpg"/>
+                        <h1>Flair Espresso</h1>
+                        <h2>325$<h2>
+                        <button class="plus" onclick="minusbutton('quantity11')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity11"/>
+                        <button class="plus" onclick="addbutton('quantity11')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity11',325,'Flair Espresso')">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity11',325,'Flair Espresso')">Buy now</button>
+                    </div>
+                     <div class="productone" id="drinks">
+                        <img src="images/machine4.jpg"/>
+                        <h1>L'OR machine</h1>
+                        <h2>190$<h2>
+                        <button class="plus" onclick="minusbutton('quantity12')"><i class="fa-solid fa-minus"></i></i></button>
+                        <input type="text" name="quantity12"/>
+                        <button class="plus" onclick="addbutton('quantity12')"><i class="fa-solid fa-plus"></i></button>
+                        <br>
+                        <button class="cartandbuy" onclick="addcart('quantity12',190,'LOR machine');">Add to cart</button>
+                        <br>
+                        <button class="cartandbuy" onclick="buynow('quantity12',190,'LOR machine');">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

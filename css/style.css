@@ -1,0 +1,342 @@
+/*start with header*/
+.header
+{
+  background-color:#FFFFFF;
+  height: 111px;
+  border-bottom: solid;
+  border-color:#C0C0C0;
+  border-width: thin;
+  
+}
+/*the main continer to make web page in center*/
+.container
+{
+    padding-left:15px;
+    padding-right:15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    width: 1170px;
+}
+/*container inside header*/
+.header .container
+{
+    background-color: #FFFFFF;
+    height: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo
+{
+    width: 200px;
+    height: 100px;
+}
+.menulist
+{
+    padding-right: 70px; 
+}
+.header .menulist ul
+{
+    list-style: none;
+    display: flex;
+}
+.header .menulist ul li
+{
+    padding: 20px;
+}
+.header .menulist ul li a 
+{
+    color:#242424;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight:bold;
+}
+.header .menulist ul li a i
+{
+    padding-top: 5px;
+}
+#cartnumber
+{
+    color: red;
+}
+.header .menulist ul li .active
+{
+    color:#cc9f50;
+}
+.header .menulist ul li a:hover
+{
+    color: #cc9f50;
+}
+/*end of header*/
+/*start of landing----------------------------------------------------------------------*/
+/*the main div of landing*/
+.landing
+{
+    padding-top: 80px;
+}
+.landing .container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing .bags
+{
+  width: 540px;
+  height: 500px;
+  margin-left: 0px;
+  padding-top: 70px;
+}
+.landing .intro
+{
+    width: 650px;
+    margin: 0;
+}
+.landing .intro .firsth1
+{
+  color: #242424;
+  font-size: 120px;
+  margin: 0;
+  line-height: 90px;
+}
+.landing .intro .secondh1
+{
+  color: #C0AA83;
+  font-size: 100px;
+  margin:0;
+  margin-bottom: 30px;
+}
+.landing .intro p
+{
+ width: 400px;
+ 
+}
+/*the first button in landing (view products)*/
+.landing .intro .button1
+{
+    background-color:#C0AA83;
+    width: 182px;
+    height: 47px;
+    border: 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: larger;
+    margin:  0;
+    margin-top:50px;
+}
+/*the second button in landing (about us)*/
+.landing .intro .button2
+{
+    background-color:#242424;
+    width: 160px;
+    height: 47px;
+    border: 0;
+    text-align: center;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: larger;
+    margin:  0;
+    margin-top:50px;
+    margin-left: 24px;
+}
+/*when view product button hover*/
+.landing .intro .button1:hover
+{
+  color: black;
+  border: solid 1px black;
+  background-color: white;
+}
+/*when about us button hover*/
+.landing .intro .button2:hover
+{
+  color: black;
+  border: solid 1px black;
+  background-color: white;
+}
+/*end of landing*/
+/*start of about us-----------------------------------------------------------*/
+.about_us
+{
+ height: 700px;
+ background-color:#2B2B2B;
+}
+.about_us .container
+{
+ height:700px;
+ background-color:#2B2B2B;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
+.about_us .about
+{
+ padding-top:130px;
+}
+.about_us .about h2
+{
+ color: #C0AA83;
+ padding-bottom: 0px;
+ margin: 0;
+ font-size: 25px;
+}
+.about_us .about h1
+{
+ color:#FFFFFF;
+ font-size: 75px;
+ padding-top:0px;
+ margin: 0;
+ width: 500px;
+}
+.about_us .about p
+{
+ color: #C0AA83;
+ width: 415px;
+ font-size: 20px;
+ padding-top:20px;
+ line-height: 30px;
+ font-weight: bold;
+}
+.about_us .fourabout
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding-left: 200px;
+  padding-top: 220px;
+}
+.about_us .fourabout .aboutone p
+{
+ padding: 0;
+color: red;
+color: #FFFFFF;
+}
+.about_us .fourabout .aboutone h1
+{
+ padding: 0;
+ font-size: 20px;
+ color: #FFFFFF;
+}
+.about_us .fourabout .aboutone i
+{
+ padding: 0;
+ color: #C0AA83;
+ font-size: 70px;
+}
+/*end of the about us----------------------------------------------------------------------*/
+.allproducts
+{
+ background-color:#F6F6F6;
+ padding: 0;
+}
+.allproducts .container
+{
+ background-color:#F6F6F6;
+}
+.allproducts .producttext
+{
+ text-align: center;
+ padding-top: 110px;
+}
+.allproducts .producttext h4
+{
+ padding: 0;
+ margin: 0;
+ color: #C0AA83;
+ font-size: 25px;
+ font-weight: bold;
+}
+.allproducts .producttext h1
+{
+ padding: 0;
+ margin: 0;
+ font-size: 70px;
+ color: #242424;
+ font-weight: bold;
+}
+.allproducts .producttext .producstlinks
+{
+width: 300px;
+padding-left: 415px;
+}
+.allproducts .producttext .producstlinks ul
+{
+ list-style: none;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.allproducts .producttext .producstlinks a
+{
+ color: #242424;
+ font-weight: bold;
+ font-size: 18px;
+ text-decoration: none;
+}
+.allproducts .producttext .producstlinks a:hover
+{
+ text-decoration: underline;
+}
+/*start of products and price*/
+.allproducts .products
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px;
+}
+.allproducts .products .productone
+{
+ background-color: #FFFFFF;
+ width: 270px;
+ height: 520px;
+ text-align: center;
+}
+.allproducts .products .productone img
+{
+ width: 250px;
+ height: 250px;
+ margin-top:25px; 
+}
+.allproducts .products .productone h1
+{
+ font-size: 25px;
+ margin-top:0;
+}
+.allproducts .products .productone h2
+{
+ color: #C0AA83;
+ font-weight: bold;
+ font-size: 40px;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.allproducts .products .productone button
+{
+ width: 180px;
+ padding: 5px;
+ font-size: 20px;
+ font-weight: bold;
+ background-color: #C0AA83;
+ border: 0;
+ color: #ffffff;
+}
+.allproducts .products .productone button:hover
+{
+ background-color: black;
+ border: solid 1px black;
+}
+.allproducts .products .productone input
+{
+ width:30px;
+ height: 15px;
+ font-size: 20px;
+}
+.allproducts .products .productone .plus
+{
+ width:35px;
+ padding: 0;
+ margin: 0;
+}
+
